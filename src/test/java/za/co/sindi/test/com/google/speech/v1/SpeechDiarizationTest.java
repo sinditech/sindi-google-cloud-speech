@@ -55,7 +55,7 @@ public class SpeechDiarizationTest {
 		request.setAudio(recognitionAudio);
 		request.setConfig(config);
 		
-		SpeechClient speechClient = new SpeechClientImpl("ya29.a0AXooCgul10NP2R9JBYvOw5S88w2EggUxQmrB8U8pXbvBprl8BRBimZq3V8VeJQsnofvUmRY5godMg57wsqYH23MKjIP7iIrZGRlUstrBwuDczfaDGYedVRt0tt-BdjHDMC3_pCQ7d0IkYOc5Lgs1YXVCb00Dy9hOLdunaCgYKAX4SARESFQHGX2Mi0plEVsRkM-JmY7cwRs6xcQ0171"); //("AIzaSyBkPeaSt4UBQ3cge7kSNE9A214zeaOtS7w");
+		SpeechClient speechClient = new SpeechClientImpl("<YOUR GCP ACCESS TOKEN HERE.>");
 		RecognizeResponse recognizeResponse = speechClient.recognize(request);
 		SpeechRecognitionResult[] results = recognizeResponse.getResults();
 		
